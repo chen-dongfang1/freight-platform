@@ -34,11 +34,18 @@
 
 ## 📸 功能截图
 
-### 管理后台
-![管理后台](https://via.placeholder.com/800x400?text=Admin+Panel)
+### 管理后台 - 全部订单
+![全部订单](更新后全部订单.png)
 
-### Telegram Bot
-![Telegram Bot](https://via.placeholder.com/400x600?text=Telegram+Bot)
+### 货运订单页面
+![货运订单](更新后的货运订单.png)
+
+### 代驾订单页面
+![代驾订单](更新后代驾订单.png)
+
+### Telegram Bot 体验
+> 货运Bot：https://t.me/YunjieFreightBot  
+> 代驾Bot：https://t.me/AntuDriveBot
 
 ## 🔧 本地运行
 
