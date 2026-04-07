@@ -2,6 +2,10 @@
 
 基于 Telegram Bot 的货运与代驾平台，支持用户下单、司机接单、管理后台。
 
+## 📍 当前状态
+
+✅ **已上线运行** - 服务于真实司机和用户，稳定运行中
+
 ## 🚀 功能特点
 
 ### 用户端（Telegram Bot）
@@ -26,11 +30,30 @@
 
 ## 🛠️ 技术栈
 
-- **后端**：Python / Flask
-- **Bot**：python-telegram-bot
-- **地图**：Google Maps API
-- **前端**：Bootstrap 5
-- **部署**：阿里云轻量服务器
+| 层级 | 技术 |
+|------|------|
+| 后端 | Python / Flask |
+| Bot框架 | python-telegram-bot v20（异步处理高并发）|
+| 地图API | Google Maps API |
+| 前端 | Bootstrap 5 |
+| 部署 | 阿里云轻量服务器（美国弗吉尼亚）|
+
+## 💡 技术亮点
+
+- **异步高并发**：利用 python-telegram-bot v20 的异步特性，支持多用户同时下单
+- **快速后台**：通过 Flask 轻量级架构，管理后台响应迅速
+- **自动计价**：基于 Google Maps API 的距离计算，实时生成运费/代驾费
+- **数据导出**：支持 CSV 格式订单导出，方便财务对账
+
+## 🔗 体验链接
+
+| 服务 | 链接 |
+|------|------|
+| 货运Bot | https://t.me/YunjieFreightBot |
+| 代驾Bot | https://t.me/AntuDriveBot |
+| 管理后台 |（演示地址）               |
+
+> 演示账号：联系获取
 
 ## 📸 功能截图
 
@@ -43,13 +66,10 @@
 ### 代驾订单页面
 ![代驾订单](更新后代驾订单.png)
 
-### Telegram Bot 体验
-> 货运Bot：https://t.me/YunjieFreightBot  
-> 代驾Bot：https://t.me/AntuDriveBot
-
 ## 🔧 本地运行
 
-1. 克隆仓库
 ```bash
 git clone https://github.com/chen-dongfang1/freight-platform.git
 cd freight-platform
+pip install -r requirements.txt
+python app.py
